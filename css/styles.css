@@ -61,19 +61,30 @@ nav ul a:hover {
 section {
   display: flex;
   gap: 2rem 1rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
 }
 
 article {
   flex: 1;
   border-radius: 1rem;
   padding-bottom: 1.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+article:hover {
+  box-shadow: 2px 2px 8px #212b27;
+  transform: scale(1.04);
 }
 
 article img {
   max-width: 100%;
   border-radius: 1em;
+}
+
+article h2 {
+  text-align: center;
+  text-shadow: 1px 1px 5px #535025;
 }
 
 article ul {
@@ -83,6 +94,10 @@ article ul {
 
 article a:link {
   font-size: 1.3rem;
+}
+
+article a:visited {
+  color: #212b27;
 }
 
 article a:hover {
@@ -95,7 +110,7 @@ article a:active {
 }
 
 main article {
-  background-color: #fbf1bb79;
+  background-color: #faeead79;
   padding-left: 1rem;
   padding-right: 1rem;
 }
